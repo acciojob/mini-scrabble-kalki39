@@ -1,7 +1,12 @@
-//your code here
-let letter=document.getElementById('evaluatedText')
-let out=document.getElementById('letterCount')
+let letter = document.getElementById('evaluatedText')
+let out = document.getElementById('letterCount')
 
-count(){
-	out.innerText=letter.value
+
+let count = () => {
+  if (letter.value == "") {
+    out.innerText = 0
+  }
+  else {
+    out.innerText = Number(letter.value.length)
+  }
 }
